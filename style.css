@@ -55,10 +55,33 @@ body {
 section#logo2{
     background: url('img/giftransito.gif') center center no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+section#logo2,
+section#logo2 .logo2-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo2-subtitle {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px #ffffff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
+
+    text-shadow: 2px 2px 8px #55C6CF;
 }
 
 #logo2 h1 {
@@ -109,12 +132,13 @@ img#imgdois {
 }
 
 section#ttres {
-display: flex;
-align-items: center; 
-justify-content: space-between;
-padding: 20px;
-background-color: white;
-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    gap: 40px;                 
 }
 
 img#silJDM {
@@ -123,11 +147,14 @@ height: auto;
 }
 
 div.text-container {
-width: 100%; 
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-right: 5%;
+    width: 100%;
+    max-width: 700px;          
+    margin: 0;                 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       
+    text-align: center;        
 }
 
 h1#hum {
@@ -137,7 +164,81 @@ text-align: center;
 margin-top: 15%;
 }
 
+h3#hum {
+font-size: 35px;
+color: #626164;
+text-align: center;
+margin-top: 15%;
+}
+
 p {
+color: #626164;
+font-size: 25px;
+line-height: 1.5;
+text-align: center;
+margin-bottom: 15%;
+}
+
+/*Se Beber Não Dirija*/
+
+h1#hum1 {
+font-size: 45px;
+color: #626164;
+text-align: center;
+margin-top: 15%;
+margin-bottom: 0%;
+}
+
+h3#hum1 {
+font-size: 35px;
+color: #626164;
+text-align: center;
+margin-top: 15%;
+margin-bottom: 5%;
+}
+
+h3#hum2 {
+font-size: 35px;
+color: #626164;
+text-align: center;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+h3#hum3 {
+font-size: 35px;
+color: #626164;
+text-align: center;
+margin-top: -10%;
+margin-bottom: 5%;
+}
+
+
+.p1 {
+color: #626164;
+font-size: 25px;
+line-height: 1.5;
+text-align: center;
+margin-bottom: -10%;
+}
+
+.p2 {
+color: #626164;
+font-size: 25px;
+line-height: 1.5;
+text-align: center;
+margin-bottom: 0%;
+}
+
+.p3 {
+color: #626164;
+font-size: 25px;
+line-height: 1.5;
+text-align: center;
+margin-bottom: 15%;
+}
+
+.p4 {
 color: #626164;
 font-size: 25px;
 line-height: 1.5;
@@ -171,6 +272,73 @@ flex: 1;
 
 .txtFooter {
 margin: 5px 0;
+}
+
+.tabela-estatisticas {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 40px auto;
+    border-collapse: collapse;
+    background: #f8fafd;
+    box-shadow: 0 2px 12px #0002;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1.1em;
+}
+
+.tabela-estatisticas th, .tabela-estatisticas td {
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.tabela-estatisticas th {
+    background: #55C6CF;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.15em;
+}
+
+.tabela-estatisticas tr:nth-child(even) {
+    background: #eaf6f7;
+}
+
+.tabela-estatisticas tr:nth-child(odd) {
+    background: #f8fafd;
+}
+
+.tabela-estatisticas td {
+    color: #444;
+}
+
+.tabela-estatisticas tr:hover {
+    background: #d0f0f3;
+    transition: background 0.2s;
+}
+
+@media (max-width: 600px) {
+    .tabela-estatisticas, .tabela-estatisticas thead, .tabela-estatisticas tbody, .tabela-estatisticas th, .tabela-estatisticas td, .tabela-estatisticas tr {
+        display: block;
+        width: 100%;
+    }
+    .tabela-estatisticas thead tr {
+        display: none;
+    }
+    .tabela-estatisticas td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .tabela-estatisticas td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #55C6CF;
+    }
 }
 
 @media (max-width: 768px) {
@@ -213,6 +381,9 @@ margin: 5px 0;
         }
     
         h1#hum {
+            font-size: 15px;
+        }
+        h3#hum {
             font-size: 15px;
         }
     
