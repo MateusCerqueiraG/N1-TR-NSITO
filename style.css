@@ -1,54 +1,347 @@
-body {
+@font-face {
+    font-family: eita;
+    src: url(fonte/TruenoBdIt.otf) format('opentype');
+}
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: eita;
 }
 
-.container {
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-    padding: 20px;
+html {
+scroll-behavior: smooth;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.banner {
-    width: 100%;
-    height: 200px;
-    background-image: url('https://viagemeturismo.abril.com.br/wp-content/uploads/2019/03/2018-scorecard-featured-image-layout-2000_1200.001.jpeg?quality=70&strip=info&resize=680');
+body {
+    background-image: url(img/gifaa.gif);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    margin-bottom: 20px;
 }
 
-nav {
-    background-color: #555;
-    overflow: hidden;
+section#secCAB {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    box-shadow: 0px 10px 27px #920a0a, -13px -13px 27px #920a0a;
+    z-index: 2;
+    justify-content: center;
 }
 
-nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+section#logo2{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+img#logo {
+width: 100%;
+max-width: 350px;
+height: auto; 
+}
+
+div#header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 70%;
+}
+
+#header2 a {
+    font-size: 2rem;
+    transition: 0.4s;
+}
+
+#header2 a:link,
+#header2 a:visited {
+    color: #ffffff;
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #111;
+#header2 a:hover {
+    color: rgb(68, 5, 5);
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 0.9em;
-    color: #555;
+.menu-divider {
+    width: 3px;
+    height: 40px;
+    background-color: black;
+    border: none;
+}
+
+img#imgdois {
+    width: 600px;
+    height: 600px;
+}
+
+section#ttres {
+display: flex;
+align-items: center; 
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+width: 100%;
+margin-bottom: 20px;
+}
+
+img#silJDM {
+width: 40%;
+height: auto;
+border-radius: 10px;
+margin-right: 20px; 
+}
+
+div.text-container {
+width: 55%; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+h1#hum {
+font-size: 45px;
+color: #626164;
+text-align: left;
+}
+
+h1#htres {
+font-size: 25px;
+color: #000000;
+margin: 10px 0;
+text-align: left;
+}
+
+p {
+color: #626164;
+font-size: 25px;
+line-height: 1.5;
+text-align: left;
+}
+
+section#ttres2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+width: 100%;
+position: relative;
+}
+
+img#POLAROIDdois {
+width: 45%;
+height: auto;
+box-shadow: 10px 10px 20px 5px;
+order: 2;
+margin-right: 2%;
+}
+
+h1#Polatextodois {
+font-size: 35px;
+color: rgb(255, 255, 255);
+width: 50%;
+text-align: center;
+order: 1;
+}
+
+.vermeio {
+    color: #CD0500;
+}
+
+section#tquatro {
+display: flex;
+align-items: center; 
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+div.text-container2 {
+width: 55%; 
+margin-left: 3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+img#suba {
+width: 40%;
+height: auto;
+border-radius: 10px;
+margin-left: 20px; 
+}
+
+img#POLAROIDTRES {
+width: 45%;
+height: auto;
+box-shadow: 10px 10px 20px 5px;
+order: 1;
+margin-left: 2%;
+}
+
+h1#PolatextoTRES {
+font-size: 35px;
+color: rgb(255, 255, 255);
+width: 50%;
+text-align: center;
+order: 2;
+}
+
+section#tcinco {
+display: flex;
+align-items: center; 
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+img#supra {
+width: 40%;
+height: auto;
+border-radius: 10px;
+margin-right: 20px; 
+}
+
+.footer {
+display: flex;
+justify-content: center; 
+align-items: center; 
+padding: 20px;
+background-color: #ff0000; 
+flex-wrap: wrap;
+}
+
+.footer-logo {
+max-width: 350px;
+margin-right: 20px;
+}
+
+.txtFooter {
+text-align: center;
+color: #ffffff;
+flex: 1;
+}
+
+.txtFooter {
+margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+          background-image: url(img/wallcelular.jpg);
+    }
+
+    div#header2 {
+        padding: 1%;
+        width: 100%;
+        height: 50px;
+    }
+
+    img#imgdois {
+            width: 200px;
+            height: 200px;
+    }
+
+    #header2 a{
+            font-size: 10px;
+    }
+
+    .menu-divider {
+            width: 1px;
+            height: 20px;
+            background-color: black;
+            border: none;
+        }
+
+        section#ttres, #tquatro, #tcinco {
+            flex-direction: row; 
+        }
+    
+        img#silJDM {
+            width: 50%; 
+        }
+    
+        div.text-container {
+            width: 45%; 
+        }
+    
+        h1#hum {
+            font-size: 15px;
+        }
+    
+        h1#htres {
+            font-size: 12px;
+        }
+    
+        p {
+            font-size: 10px;
+        }
+
+        section#ttres2 {
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+        }
+    
+        img#POLAROIDdois {
+            width: 50%;
+            margin: 20px 0;
+        }
+    
+        h1#Polatextodois {
+            width: 45%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        img#suba {
+            width: 50%; 
+            margin-right: 0px; 
+        }
+
+        img#POLAROIDTRES {
+            width: 50%;
+            margin: 20px 0;
+        }
+    
+        h1#PolatextoTRES {
+            width: 45%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        img#supra {
+            width: 50%; 
+        }
+
+        .footer {
+            flex-direction: column; 
+            align-items: center;
+        }
+        
+        .footer-logo {
+            margin-right: 0; 
+            margin-bottom: -40px;
+            margin-top: -40px; 
+            max-width: 200px;
+        }
+
+        .txtFooter {
+            font-size: 10px;
+            line-height: 1.5;
+        }
 }
