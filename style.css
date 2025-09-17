@@ -313,7 +313,7 @@ margin: 5px 0;
 
 .tabela-estatisticas tr:hover {
     background: #d0f0f3;
-    transition: background 0.2s;
+    transition: background 0.9s;
 }
 
 @media (max-width: 600px) {
